@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOE BOUTIQUE</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</head>
+<style>
+    .siguiente {
+        display: inline-block;
+        width: 200px;
+        ;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 30px 60px;
+        margin: 50px 120px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    a {
+        display: inline-block;
+        width: 200px;
+        ;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background-color: rgb(0, 0,0);
+        border-radius: 10px;
+        padding: 30px 60px;
+        margin: 50px 120px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    a2 {
+        display: inline-block;
+        width: 200px;
+        ;
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 30px 60px;
+        margin: 50px 120px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: transparent;
+        border: 2px solid rgb(255, 255, 255);
+        color: black;
+    }
+
+    .Agregar {
+        background-color: black;
+        width: 120px !important;
+        color: black;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+
+        font-size: 17px;
+        font-weight: 300;
+
+    }
+    header{
+        justify-content: left;
+        color: black;
+    }
+    
+</style>
+
+<body background="Fondo2.jpeg">
+    <header id="header">
+        <h2>ZOE BOUTIQUE</h2>
+        <img class="carrito" id="carrito_ir" src="carro.png" alt="carrito compras">
+        <h1 style="color: white;">_____________________</h1>
+        <a href="menu.html" >Regresar</a>
+    </header>
+    <a href="https://www.facebook.com/profile.php?id=61559182764506&mibextid=LQQJ4d" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/zoe_boutique_padilla_?igsh=bGVwOHIxYWNzaXQz&utm_source=qr" target="_blank">Instagram</a>
+    <a href="https://x.com/zomichellrazop2/status/1798480498207207732?s=46" target="_blank">Twiter/ X</a>
+    <div class="contenedor" id="contenedor">
+        <div>
+            <img src="Diseño sin título (1).png" alt="producto 1">
+            <div class="informacion">
+                <p>Vestido Anaranjado</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="1">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="3.png" alt="producto 1">
+            <div class="informacion">
+                <p>Saco Rojo</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="2">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="4.png" alt="producto 1">
+            <div class="informacion">
+                <p>Vestido rosa</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="3">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="5.png" alt="producto 1">
+            <div class="informacion">
+                <p>Vestido flores</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="4">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="5 (1).png" alt="producto 1">
+            <div class="informacion">
+                <p>Sudadera Rosa</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="5">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="5 (2).png" alt="producto 1">
+            <div class="informacion">
+                <p>Sudadera Amarilla</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="6">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa2"><button class="siguiente ropa2" onclick="ropa2()">></button></div>
+
+        <div class="ropa2_contenedor">
+            <img src="1(1).png" alt="producto 1">
+            <div class="informacion">
+                <p>Saco beige</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="7">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa2_contenedor">
+            <img src="7(4).png" alt="producto 1">
+            <div class="informacion">
+                <p>Top Negro</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="8">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa2_contenedor">
+            <img src="7(5).png" alt="producto 1">
+            <div class="informacion">
+                <p>Sueter azul</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="9">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa2_contenedor">
+            <img src="2(4).png" alt="producto 1">
+            <div class="informacion">
+                <p>Vestido Rosa palido</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="10">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa2_contenedor">
+            <img src="2(5).png" alt="producto 1">
+            <div class="informacion">
+                <p>Vestido Vino</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="11">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa2_contenedor">
+            <img src="2(6).png" alt="producto 1">
+            <div class="informacion">
+                <p>Saco blanco</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="12">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa3"><button class="siguiente ropa3" onclick="ropa3()">></button></div>
+        <div class="ropa3_contenedor">
+            <img src="3(1).png" alt="producto 1">
+            <div class="informacion">
+                <p>Jeans mujer</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="13">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa3_contenedor">
+            <img src="3(2).png" alt="producto 1">
+            <div class="informacion">
+                <p>Pantalon Ancho</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="14">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa3_contenedor">
+            <img src="3(3).png" alt="producto 1">
+            <div class="informacion">
+                <p>Pantalones rotos</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="15">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa3_contenedor">
+            <img src="3(4).png" alt="producto 1">
+            <div class="informacion">
+                <p>Sudadera Blanca</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="16">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa3_contenedor">
+            <img src="3(5).png" alt="producto 1">
+            <div class="informacion">
+                <p>Sueter Verde</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="17">Comprar</button>
+            </div>
+        </div>
+        <div class="ropa3_contenedor">
+            <img src="3(6).png" alt="producto 1">
+            <div class="informacion">
+                <p>Top con Mangas</p>
+                <p class="precio"> $199<span>.99</span></p>
+                <button class="Agregar" name="18">Comprar</button>
+            </div>
+        </div>
+
+
+        <!--<a href="principal.html" target="_parent">REGRESAR</a>
+        <script src="app.js"></script>
+        <a href="ropa2.html" target="_parent">></a>
+        <script src="app.js"></script>-->
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            ocultaropa();
+        });
+        function ropa3() {
+            var contenedoresropa = document.getElementsByClassName('ropa2_contenedor');
+            for (var x = 0; x < contenedoresropa.length; x++) {
+                contenedoresropa[x].style.display = "block";
+            }
+            var botonoculta = document.querySelector('.ropa2');
+            botonoculta.style.display = "none";
+            botonoculta = document.querySelector('.ropa3');
+            botonoculta.style.display = "block";
+        }
+        function ropa2() {
+            var contenedoresropa = document.getElementsByClassName('ropa2_contenedor');
+            for (var x = 0; x < contenedoresropa.length; x++) {
+                contenedoresropa[x].style.display = "block";
+            }
+            var botonoculta = document.querySelector('.ropa2');
+            botonoculta.style.display = "none";
+            botonoculta = document.querySelector('.ropa3');
+            botonoculta.style.display = "block";
+        }
+        function ropa3() {
+            var contenedoresropa = document.getElementsByClassName('ropa3_contenedor');
+            for (var x = 0; x < contenedoresropa.length; x++) {
+                contenedoresropa[x].style.display = "block";
+            }
+            var botonoculta = document.querySelector('.ropa3');
+            botonoculta.style.display = "none";
+        }
+        function ocultaropa() {
+            var contenedoresropa = document.getElementsByClassName('ropa2_contenedor');
+            for (var x = 0; x < contenedoresropa.length; x++) {
+                contenedoresropa[x].style.display = "none";
+            }
+            contenedoresropa = document.getElementsByClassName('ropa3_contenedor');
+            for (var x = 0; x < contenedoresropa.length; x++) {
+                contenedoresropa[x].style.display = "none";
+            }
+            var botonoculta = document.querySelector('.ropa3');
+            botonoculta.style.display = "none";
+        }
+        document.querySelectorAll(".Agregar").forEach(el => {
+            el.addEventListener("click", e => {
+                const name = e.target.getAttribute("name");
+                $.ajax({
+                    type: 'POST', //aqui puede ser igual get
+                    url: 'AgregarACarrito.php',//aqui va tu direccion donde esta tu funcion php
+                    data: { idProducto: name, idUsuario: 1 },//aqui tus datos
+                    success: function (json) {
+                        alert("Agregado correctamente");
+                        console.log(json);
+                    },
+                    error: function (data) {
+                        console.log("error" + data);
+                    }
+                });
+                //console.log("Se ha clickeado el id " + name);
+            });
+        });
+        $("#carrito_ir").on("click",function(){
+            location.href ="carrito.php";
+        });
+    </script>
+</body>
+
+</html>
